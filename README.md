@@ -10,9 +10,9 @@
 
 [Website](https://subsquid.io) | [Docs](https://docs.subsquid.io/) | [Discord](https://discord.gg/subsquid)
 
-# Subsquid Quest Template
+# ENS Subgraph migration 
 
-This folder contains a starter EVM indexing template.
+This quest is to migrate the [ENS Subgraph](https://docs.ens.domains/contract-api-reference/subgraphdata) to Squid SDK. The repo for the subgraph can be found [here](https://github.com/ensdomains/ens-subgraph). The resulting squid should match the GraphQL API of the subgraph as close as possible, by migrating `schema.graphql`. The judges reserve the right to request improvements afther the initial review of the submission. Reach out to the [TG Channel](#) for any tech questions regarding this quests. 
 
 # Deploy a template squid on ETH
 
@@ -22,12 +22,22 @@ Using Subsquid Cloud Services, deploy the squid this folder.
 
 | Category         | Skill Level                          | Time required (hours) | Max Participants | Reward                             | Status |
 | ---------------- | ------------------------------------ | --------------------- | ---------------- | ---------------------------------- | ------ |
-| Squid Deployment | $\textcolor{green}{\textsf{Simple}}$ | ~2                    | 1                | $\textcolor{red}{\textsf{50tSQD}}$ | open   |
+| Squid Deployment | $\textcolor{green}{\textsf{Simple}}$ | ~40                    | 5                | $\textcolor{red}{\textsf{2000tSQD}}$ | open   |
 
 # Acceptance critera
 
-Provide Github Repository describing the squid and an API link from the aquarium.
+Each quest should be submitted as a PR and will be reviewed manually. The PR should contain `README.MD` with
+
+- Insturctions how to run the squid locally
+- Sample Squid queries and the corresponding Subgraph queries
+
+The code should be well documented. The judges will access:
+
+- In-line commends where necessary
+- Clarity of the code
+- Performance and optimization (if [batching](https://docs.subsquid.io/basics/batch-processing/)  and [Multicall queries](https://docs.subsquid.io/tutorials/bayc/step-four-optimizations/#using-multicall-for-aggregating-state-queries) are used whenever appropriate)
 
 # Useful links
 
 - [https://docs.subsquid.io/deploy-squid/quickstart/](Quickstart)
+- [TheGraph Migration guide](https://docs.subsquid.io/migrate/migrate-subgraph/)
