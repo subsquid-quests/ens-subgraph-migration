@@ -14,10 +14,6 @@
 
 This quest is to migrate the [ENS Subgraph](https://docs.ens.domains/contract-api-reference/subgraphdata) to Squid SDK. The repo for the subgraph can be found [here](https://github.com/ensdomains/ens-subgraph). The resulting squid should match the GraphQL API of the subgraph as close as possible, by migrating `schema.graphql`. The judges reserve the right to request improvements afther the initial review of the submission. Reach out to the [TG Channel](#) for any tech questions regarding this quest. 
 
-# Deploy a template squid on ETH
-
-Using Subsquid Cloud Services, deploy the squid this folder.
-
 # Quest Info
 
 | Category         | Skill Level                          | Time required (hours) | Max Participants | Reward                             | Status |
