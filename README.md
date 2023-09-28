@@ -28,7 +28,7 @@ Each quest should be submitted as a PR and will be reviewed manually. The PR sho
 - Sample Squid queries and the corresponding Subgraph queries
 
 The code should be well documented. The judges will access:
-
+   
 - In-line commends where necessary
 - Clarity of the code
 - Performance and optimization (if [batching](https://docs.subsquid.io/basics/batch-processing/)  and [Multicall queries](https://docs.subsquid.io/tutorials/bayc/step-four-optimizations/#using-multicall-for-aggregating-state-queries) are used whenever appropriate)
