@@ -24,7 +24,7 @@ This quest is to migrate the [ENS Subgraph](https://docs.ens.domains/contract-ap
 
 Each quest should be submitted as a PR and will be reviewed manually. The PR should contain `README.MD` with
 
-- Insturctions how to run the squid locally
+- Instructions how to run the squid locally
 - Sample Squid queries and the corresponding Subgraph queries
 
 The code should be well documented. The judges will access:
