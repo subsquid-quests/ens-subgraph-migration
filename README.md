@@ -12,7 +12,7 @@
 
 # ENS Subgraph migration 
 
-This quest is to migrate the [ENS Subgraph](https://docs.ens.domains/contract-api-reference/subgraphdata) to Squid SDK. The repo for the subgraph can be found [here](https://github.com/ensdomains/ens-subgraph). The resulting squid should match the GraphQL API of the subgraph as close as possible, by migrating `schema.graphql`. The judges reserve the right to request improvements afther the initial review of the submission. Reach out to the [Discord Channel]( https://discord.com/channels/857105545135390731/1155812879770058783) for any tech questions regarding this quest. 
+This quest is to migrate the [ENS Subgraph](https://thegraph.com/hosted-service/subgraph/ensdomains/ens) to Squid SDK. The repo for the subgraph can be found [here](https://github.com/ensdomains/ens-subgraph). The resulting squid should match the GraphQL API of the subgraph as close as possible, by migrating `schema.graphql`. The judges reserve the right to request improvements afther the initial review of the submission. Reach out to the [Discord Channel]( https://discord.com/channels/857105545135390731/1155812879770058783) for any tech questions regarding this quest. 
 
 # Quest Info
 
@@ -35,5 +35,6 @@ The code should be well documented. The judges will access:
 
 # Useful links
 
-- [https://docs.subsquid.io/deploy-squid/quickstart/](Quickstart)
+- [Quickstart](https://docs.subsquid.io/deploy-squid/quickstart/)
 - [TheGraph Migration guide](https://docs.subsquid.io/migrate/migrate-subgraph/)
+- [ENS Subgraph source code](https://docs.ens.domains/contract-api-reference/subgraphdata)
