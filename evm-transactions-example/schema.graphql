@@ -1,9 +1,6 @@
-type Transaction @entity {
+type Gravatar @entity {
   id: ID!
-  block: Int!
-  timestamp: DateTime!
-  hash: String!
-  from: String!
-  to: String!
-  input: String!
+  owner: String!
+  displayName: String!
+  imageUrl: String!
 }
