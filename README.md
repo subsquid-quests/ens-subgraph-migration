@@ -22,7 +22,7 @@ This quest is to migrate the [ENS Subgraph](https://thegraph.com/hosted-service/
 
 # Acceptance critera
 
-Each quest should be submitted as a PR and will be reviewed manually. The PR should contain `README.MD` with
+Each quest should be submitted as a private repo and will be reviewed manually. To submit, invite the following github accounts: @dariaag, @belopash, @abernatskiy and @dzhelezov. The repo should contain `README.MD` with
 
 - Insturctions how to run the squid locally
 - Sample Squid queries and the corresponding Subgraph queries
