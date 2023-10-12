@@ -27,7 +27,7 @@ Each quest should be submitted as a private repo and will be reviewed manually. 
 - Insturctions how to run the squid locally
 - Sample Squid queries and the corresponding Subgraph queries
 
-The code should be well documented. The judges will access:
+The code should be well documented. The judges will assess:
 
 - In-line commends where necessary
 - Clarity of the code
