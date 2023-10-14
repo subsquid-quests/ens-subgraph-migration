@@ -1,10 +1,3 @@
-
-
-# Snapshot Subgraph
-
-This is a starter **Snapshot Subgraph** ported from The Graph [Snapshot Subgraph](https://thegraph.com/hosted-service/subgraph/snapshot-labs/snapshot). 
-See [Squid SDK docs](https://docs.subsquid.io/) for a complete reference.
-
 ## Quickstart and run locally
 
 ```cmd
@@ -85,4 +78,3 @@ query MyQuery {
 ```
 Output
 <img width="1392" src="https://github.com/Asdjamez/Migration_Quest_Snap/blob/main/assets/gravatar3.jpg">
-
