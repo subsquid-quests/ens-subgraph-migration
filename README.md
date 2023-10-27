@@ -12,26 +12,53 @@
 
 # ENS Subgraph migration 
 
+**ATT: We updated and re-opened this quest to submissions on Oct 27th**
+
 This quest is to migrate the [ENS Subgraph](https://thegraph.com/hosted-service/subgraph/ensdomains/ens) to Squid SDK. The repo for the subgraph can be found [here](https://github.com/ensdomains/ens-subgraph). The resulting squid should match the GraphQL API of the subgraph as close as possible, by migrating `schema.graphql`. The judges reserve the right to request improvements afther the initial review of the submission. Reach out to the [Discord Channel]( https://discord.com/channels/857105545135390731/1155812879770058783) for any tech questions regarding this quest. 
 
 # Quest Info
 
 | Category         | Skill Level                          | Time required (hours) | Max Participants | Reward                             | Status |
 | ---------------- | ------------------------------------ | --------------------- | ---------------- | ---------------------------------- | ------ |
-| Squid Deployment | $\textcolor{orange}{\textsf{Medium}}$ | ~20                    | 5                | $\textcolor{red}{\textsf{3000tSQD}}$ | open   |
+| Squid Deployment | $\textcolor{orange}{\textsf{Medium}}$ | ~100                    | 5                | $\textcolor{red}{\textsf{5000tSQD}}$ | open   |
 
 # Acceptance critera
 
-Each quest should be submitted as a private repo and will be reviewed manually. To submit, create an issue with url to your repo and invite the following github accounts: [@dariaag](https://github.com/dariaag), [@belopash](https://github.com/belopash), [@abernatskiy](https://github.com/abernatskiy) and [@dzhelezov](https://github.com/dzhelezov). The repo should contain `README.MD` with
+Ultimately, the solutions are accepted at the discretion of judges following a manual review. This sections is a rough guide that is in no way binding on our side.
 
-- Insturctions how to run the squid locally
-- Sample Squid queries and the corresponding Subgraph queries
+Some of the reasons why the solution will not be accepted include:
+- squid does not start
+- squid fails to sync fully due to internal errors
+- [batch handler filters](https://docs.subsquid.io/evm-indexing/configuration/caveats/) are not set up correctly (leads to a late sync failure in [RPC-ingesting](https://docs.subsquid.io/evm-indexing/evm-processor/#rpc-ingestion) squids)
+- data returned for any query is not consistent with subgraph data
 
-The code should be well documented. The judges will assess:
+You may find [this tool](https://github.com/abernatskiy/compareGraphQL) to be useful for squid to subgraph API comparisons.
 
-- In-line comments where necessary
-- Clarity of the code
-- Performance and optimization (if [batching](https://docs.subsquid.io/basics/batch-processing/)  and [Multicall queries](https://docs.subsquid.io/tutorials/bayc/step-four-optimizations/#using-multicall-for-aggregating-state-queries) are used whenever appropriate)
+It is desirable that your solution:
+- includes a suite of test GraphQL queries that touches every [schema entity](https://docs.subsquid.io/store/postgres/schema-file/entities/) and, if used, every [custom resolver](https://docs.subsquid.io/graphql-api/custom-resolvers/) at least once, with corresponding subgraph queries (listing in README is enough)
+- has high code quality (readability, simplicity, comments where necessary)
+- uses [batch processing](https://docs.subsquid.io/basics/batch-processing/) consistently
+- avoids any "sleeping bugs": logic errors that accidentally happen to not break the data
+- follows the standard squid startup procedure:
+  ```
+  git clone <repo_url>
+  cd <repo_url>
+  npm ci
+  sqd up
+  sqd process &
+  sqd serve
+  ```
+  If it does not, describe your startup procedure in the README.
+
+Please test your solutions before submitting. We do allow some corrections, but judges' time is not limitless.
+
+To submit, invite the following github accounts to your private repo : [@dariaag](https://github.com/dariaag), [@belopash](https://github.com/belopash), [@abernatskiy](https://github.com/abernatskiy) and [@dzhelezov](https://github.com/dzhelezov).
+
+# Rewards
+
+tSQD rewards will be delivered via the [quests page](https://app.subsquid.io/quests) of Subsquid Cloud. Make sure you use the same GitHub handle to make a submission and when linking to that page.
+
+Winners will be listed at the quest repository README. If you do not wish to be listed please tell us that in an issue in your submission repo.
 
 # Useful links
 
