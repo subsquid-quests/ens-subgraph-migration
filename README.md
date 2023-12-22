@@ -20,7 +20,7 @@ This quest is to migrate the [ENS Subgraph](https://thegraph.com/hosted-service/
 
 | Category         | Skill Level                          | Time required (hours) | Max Participants | Reward                             | Status |
 | ---------------- | ------------------------------------ | --------------------- | ---------------- | ---------------------------------- | ------ |
-| Squid Deployment | $\textcolor{orange}{\textsf{Medium}}$ | ~100                    | 5                | $\textcolor{red}{\textsf{5000tSQD}}$ | in review |
+| Squid Deployment | $\textcolor{orange}{\textsf{Medium}}$ | ~100                    | 5                | $\textcolor{red}{\textsf{5000tSQD}}$ | ended |
 
 # Acceptance critera
 
